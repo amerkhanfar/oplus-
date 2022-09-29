@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  cursor: url("../img/dot.png"), auto;
+}
+.map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+}
+
+.info {
+  z-index: 1000;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0;
+  top: 0;
+  background-color: black;
+  width: 300px;
+  height: 100%;
+}
+.info img {
+  width: 70%;
+}
+
+.img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.location i {
+  font-size: 30px;
+}
+
+.text {
+  margin-right: 50px;
+  margin-top: 40px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.icons i {
+  font-size: 30px;
+  padding: 10px;
+  z-index: 1001;
+  color: white;
+  margin-right: 10px;
+}
+
+.back {
+  position: absolute;
+  right: 20px;
+  color: white;
+  font-size: 35px;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.back i {
+  font-size: 35px;
+}
+
+.back:hover {
+  color: black;
+  background-color: white;
+}
+
+.bxs-envelope {
+  color: white;
+  font-size: 30px;
+}
+
+.info__mobile {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .header__mobile {
+    max-width: 100vw;
+    max-height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+  }
+
+  .vertical__mobile {
+    background-color: black;
+    padding: 20px;
+    position: relative;
+    height: 30vh;
+    display: flex;
+  }
+
+  .logo__vertical {
+    position: absolute;
+    left: -30px;
+    top: 20vh;
+    width: 30%;
+    height: 15%;
+    transform: rotate(-90deg);
+    background-image: url("../img/oplus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .logo__vertical1 {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    width: 40%;
+    height: 25%;
+
+    background-image: url("../img/oplus.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .header__mobile a img {
+    width: 50%;
+    height: 30%;
+  }
+
+  .header__mobile i {
+    color: white;
+    font-size: 20px;
+  }
+
+  .map__mobile {
+    width: 100vw;
+    height: 60vh;
+  }
+  .info__mobile {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+  }
+  .location__mobile {
+    display: flex;
+
+    line-height: 1.5;
+
+    width: 50vw;
+  }
+  .location__mobile i {
+    font-size: 25px;
+    align-self: center;
+    margin-right: 20px;
+  }
+
+  .vertical {
+    position: absolute;
+    right: -30px;
+    top: 22vh;
+    transform: rotate(90deg);
+  }
+
+  .vcenter {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-20%);
+  }
+
+  .vertical i {
+    transform: rotate(-90deg);
+  }
+
+  .social_mobile a i {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  .map {
+    display: none;
+  }
+
+  .info {
+    display: none;
+  }
+  /* Styles */
+  .bxs-envelope {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .info {
+    width: 150px;
+  }
+
+  .info img {
+    width: 80%;
+  }
+
+  .location i {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 11px;
+    width: 75%;
+    margin-left: 20px;
+  }
+
+  .icons {
+    width: 100%;
+  }
+
+  .icons i {
+    font-size: 15px;
+    padding: 8px;
+    margin-right: 5px;
+  }
+
+  .back i {
+    font-size: 35px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
